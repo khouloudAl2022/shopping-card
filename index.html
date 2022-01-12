@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>NewShop</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar content -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: blanchedalmond;">FastShop</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarScrollingDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Shop
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarScrollingDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Shoes</a></li>
+                  <li><a class="dropdown-item" href="#">djean</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">accesoirs</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- carouseeeeeeeeeeeeel -->
+      <section>
+        
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/shop.jpg" class="d-block w-100" alt="shop" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/shoes.jpg" class="d-block w-100" alt="shoes" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/man.jpg" class="d-block w-100" alt="man" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </section>
+      
+      <!-- sections cards of products -->
+      <section class="py-5 bg-light">
+          <div id="t">
+        <h3>Totale:<span id="tot">0</span> <span>DT</span></h3>
+    </div>
+        <div class="container px-4 px-lg-5 mt-5">
+         
+         
+            <div class="col mb-5">
+              <div class="card h-100">
+           <i class="fas fa-heart btn-like"></i>              <!-- Sale badge-->
+               
+                <!-- Product image-->
+                <img
+                  class="card-img-top"
+                  src="./img/sac noir.jpg"
+                  alt="..."
+                />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Special Item</h5>
+                    <!-- Product reviews-->
+                    <div
+                      class="d-flex justify-content-center small text-warning mb-2"
+                    >
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                    </div>
+                    <!-- Product price-->
+                    <span class="text-muted text-decoration-line-through" >60<span>DT</span><span class="prix">
+                    49</span> <span>DT</span>
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                 
+                  <div class="container-add">
+                   
+                   <!-- <button class="add">+</button>  -->
+                   <img src="./img/add-to-cart.png" class="add" alt="dd">
+                 <span class="qte">0</span>
+
+                  
+                  <img src="./img/remove.png" class="remove" alt="add" >
+                  <img src="./img/rubbish.png"  class="rubbish "alt="rubish" >
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                <i class="fas fa-heart btn-like"></i>
+                <!-- Sale badge-->
+                <div
+                  class="badge bg-dark text-white position-absolute"
+                  style="top: 0.5rem; right: 0.5rem"
+                >
+                  Sale
+                </div>
+                <!-- Product image-->
+                <img
+                  class="card-img-top"
+                  src="./img/nikewite.jpg"
+                  alt="..."
+                />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Sale Item</h5>
+                    <!-- Product price-->
+                    <span class="text-muted text-decoration-line-through"
+                      >200 <span>DT</span> <span class="prix"
+                    >
+                    180</span> <span>DT</span> 
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  
+                  <div class="container-add">
+                   
+                   <!-- <button class="add">+</button>  -->
+                   <img src="./img/add-to-cart.png" class="add" alt="dd">
+                 <span class="qte">0</span>
+
+                  
+                  <img src="./img/remove.png" class="remove" alt="add" >
+                  <img src="./img/rubbish.png" class="rubbish" alt="rubish" >
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+              <i class="fas fa-heart btn-like"></i>
+                <!-- Product image-->
+                <img
+                  class="card-img-top"
+                  src="./img/nubik.jpg"
+                  alt="..."
+                />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Popular Item</h5>
+                    <!-- Product reviews-->
+                    <div
+                      class="d-flex justify-content-center small text-warning mb-2"
+                    >
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                    </div>
+                    <!-- Product price-->
+                   <span class="prix" >130</span> <span> DT</span>
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                 
+                  <div class="container-add">
+                   
+                   <!-- <button class="add">+</button>  -->
+                  <img src="./img/add-to-cart.png" class="add" alt="dd">
+                 <span class="qte">0</span>
+
+                  
+                  <img src="./img/remove.png" class="remove" alt="add" >
+                  <img src="./img/rubbish.png"  class="rubbish" alt="rubish" >
+                 </div>
+                </div>
+              </div>
+            </div>
+             <div class="col mb-5">
+              <div class="card h-100">
+             <i class="fas fa-heart btn-like"></i>
+                <img
+                  class="card-img-top"
+                  src="./img/nubik.jpg"
+                  alt="..."
+                />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Popular Item</h5>
+                    <!-- Product reviews-->
+                    <div
+                      class="d-flex justify-content-center small text-warning mb-2"
+                    >
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                    </div>
+                    <!-- Product price-->
+                    <span class="prix" >140</span> <span> DT</span>
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                 
+                  <div class="container-add">
+                   
+                   <!-- <button class="add">+</button>  -->
+                   <img src="./img/add-to-cart.png" class="add" alt="dd">
+                 <span class="qte">0</span>
+
+                
+                  <img src="./img/remove.png" class="remove" alt="add" >
+                  <img src="./img/rubbish.png"  class="rubbish" alt="rubish" >
+                              
+
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
