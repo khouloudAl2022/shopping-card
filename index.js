@@ -32,7 +32,7 @@ for (let i = 0; i < rubbish.length; i++) {
     total();
   });
 }
-// function totaaale***********
+// function total***********
 function total() {
   const prix = document.querySelectorAll(".prix");
   const t = document.getElementById("tot");
